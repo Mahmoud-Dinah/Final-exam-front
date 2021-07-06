@@ -45,7 +45,7 @@ export class Favorite extends Component {
     updatestrDrinkState = (e) => this.setState({strDrink: e.target.value})
     updatestrstrDrinkThumbState = (e) => this.setState({strDrinkThumb: e.target.value})
 
-    
+    updateItem = async
 
 
 
@@ -60,6 +60,12 @@ export class Favorite extends Component {
            deleteItem={this.deleteItem}
            />
             
+           }
+
+           {this.showUpdateForm &&
+            updatestrDrinkState={this.updatestrDrinkState}
+            updatestrstrDrinkThumbState={this.updatestrstrDrinkThumbState}
+            updateItem = {this.updateItem}
            }
            </>
         )
