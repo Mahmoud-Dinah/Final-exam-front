@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
+import Main from './components/Main';
 
 import {
   BrowserRouter as Router,
@@ -16,7 +17,7 @@ export class App extends Component {
           <Header />
               <Switch>
           <Route path="/">
-            {/* <Main /> */}
+            <Main />
           </Route>
           <Route path="/favorite">
             {/* <Favorite /> */}
