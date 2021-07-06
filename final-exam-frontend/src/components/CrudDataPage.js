@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 
-export class ApiDataCompnent extends Component {
+export class CrudDataPage extends Component {
     render() {
         return (
-            this.props.apiAllDataArr.slice(0,50).map((obj, idx)=> {
+            this.props.apiCrudDataArr.map((obj, idx)=> {
                 return (
                     <div key={idx}> 
                 <Card style={{ width: '18rem' }}>
@@ -15,7 +15,8 @@ export class ApiDataCompnent extends Component {
     <Card.Text>
     {obj.idDrink}
     </Card.Text>
-    <Button variant="primary" onClick={e => this.props.addToFavorite(obj)}>Add me to your favorite</Button>
+    <Button variant="primary" onClick={e => this.props.deleteItem(obj.idDrink)}>delete drink</Button>
+    <Button variant="primary" onClick={e => this.props.updateItem(obj.strDrinkThumb, obj.strDrink)}>Update this drink</Button>
   </Card.Body>
 </Card>
                 </div>
@@ -27,7 +28,4 @@ export class ApiDataCompnent extends Component {
     }
 }
 
-
-
-
-export default ApiDataCompnent
+export default CrudDataPage;

@@ -7,10 +7,10 @@ export class Header extends Component {
         return (
             <Nav defaultActiveKey="/home" as="ul">
             <Nav.Item as="li">
-              <Nav.Link href="/">Active</Nav.Link>
+              <Nav.Link href="/">Home</Nav.Link>
             </Nav.Item>
             <Nav.Item as="li">
-              <Nav.Link href="/favorite">Link</Nav.Link>
+              <Nav.Link href="/Favorite">Favorite Page</Nav.Link>
             </Nav.Item>
           </Nav>
         )
