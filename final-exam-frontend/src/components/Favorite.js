@@ -34,6 +34,19 @@ export class Favorite extends Component {
     
     }
 
+    showUpdateForm = async (strDrink, strDrinkThumb) => {
+        this.setState ({
+            strDrink:strDrink,
+            strDrinkThumb:strDrinkThumb,
+            showUpdateForm:true
+        })
+    }
+
+    updatestrDrinkState = (e) => this.setState({strDrink: e.target.value})
+    updatestrstrDrinkThumbState = (e) => this.setState({strDrinkThumb: e.target.value})
+
+    
+
 
 
 
